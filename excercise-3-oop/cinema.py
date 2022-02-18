@@ -38,9 +38,7 @@ class Cinema:
                 print(f"Cinema is full !, we cannot add at {row} : {column}" )
                 return
 
-
             while seat.is_occupied == True:
-                print(f"Taken seat ! {row} : {column}, looking for different one" )
                 seat = findSeat(self, rand.randint(1, self.rows), self.alphabet[rand.randint(0, self.columns-1)])
 
             if (spectator.age >= min_age and 

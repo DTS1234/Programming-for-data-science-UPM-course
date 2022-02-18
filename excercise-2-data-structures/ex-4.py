@@ -46,33 +46,13 @@ if(len(level_list[len(level_list) - 1]) % 2 != 0):
 print(level_list)
 
 print("---------------------------")
-print("")
 
-stringsToPrint = []
+def pretty_print():
+    print('        0'+ level_list[0] + '        ')
+    print('     /      \     ')
+    print('   0'+level_list[1][0]+'        0'+level_list[1][1]+'   ')
+    print('  /  \      /  \  ')
+    print(level_list[2][0]+'   0'+level_list[2][1]+'   0'+level_list[2][2]+'    0'+level_list[2][3])
 
-# for i in range(len(level_list)-1, -1, -1):
-#     current = level_list[i]
-
-#     if (i == len(level_list)-1): # lowest level
-#         lowest_level = ""
-
-#         for j in range(0, len(current)):
-#             if(int(current[j])<9):
-#                 lowest_level += "0" + str(current[j])
-#             else:
-#                 lowest_level += str(current[j])
-            
-#             if((j+1)%2 != 0): 
-#                 lowest_level += " "*4            
-#             elif(j != len(current)-1):
-#                 lowest_level += " "*2
-#         stringsToPrint.append(lowest_level)
     
-#     if(len(stringsToPrint) != 0):
-#         pass
-
-# print('        01        ')
-# print('     /      \     ')
-# print('   02        03   ')
-# print('  /  \      /  \  ')
-# print('04    05  06    07')
+pretty_print()
